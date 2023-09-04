@@ -32,5 +32,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
+          key: ${{ secrets.DEPLOY_KEY }}
           publish_dir: ./dist
           destination_dir: dist
